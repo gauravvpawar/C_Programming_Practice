@@ -16,7 +16,9 @@ int main()
 
     // by the pointers
     Person *x = &p1;
-    printf("Age : %d \n" , *x.age);
-    printf("Weight : %f" , *x.weight);
+
+    (*x).age = 23;
+    printf("Age : %d \n" , p1.age);
+    printf("Weight : %f" , p1.weight);
     return 0;
 }
